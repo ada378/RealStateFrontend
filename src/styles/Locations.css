@@ -1,0 +1,249 @@
+.locations-page {
+  min-height: 100vh;
+  background: var(--light-bg);
+}
+
+.locations-hero {
+  padding: 150px 0 100px;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  text-align: center;
+  color: #1e293b;
+  position: relative;
+}
+
+.locations-hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+}
+
+.locations-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.locations-hero-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.locations-content {
+  padding: 100px 0;
+}
+
+.location-section {
+  margin-bottom: 120px;
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.location-section.reverse .location-content {
+  direction: rtl;
+}
+
+.location-section.reverse .location-text {
+  direction: ltr;
+}
+
+.location-text {
+  padding: 40px;
+}
+
+.location-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.location-subtitle {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.location-description {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.location-highlights h4,
+.location-connectivity h4,
+.location-projects h4 {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.location-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.location-highlights li {
+  padding: 8px 0;
+  color: var(--text-light);
+  position: relative;
+  padding-left: 25px;
+}
+
+.location-highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.connectivity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.connectivity-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.connectivity-icon {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.location-image {
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.location-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-comparison {
+  padding: 100px 0;
+  background: white;
+}
+
+.comparison-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 60px;
+}
+
+.comparison-table {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.comparison-row:last-child {
+  border-bottom: none;
+}
+
+.comparison-cell {
+  padding: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.comparison-header .comparison-cell {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.comparison-row .comparison-cell:first-child {
+  text-align: left;
+  background: #f8fafc;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+@media (max-width: 968px) {
+  .locations-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .location-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .location-section.reverse .location-content {
+    direction: ltr;
+  }
+  
+  .location-title {
+    font-size: 2.5rem;
+  }
+  
+  .connectivity-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .comparison-table {
+    font-size: 0.9rem;
+  }
+  
+  .comparison-cell {
+    padding: 15px 10px;
+  }
+}

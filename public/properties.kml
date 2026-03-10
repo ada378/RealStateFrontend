@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Real Estate Properties</name>
+    <description>Featured property locations</description>
+    
+    <Style id="property-icon">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    
+    <Placemark>
+      <name>Luxury Villa</name>
+      <description>
+        <![CDATA[
+          <h3>Luxury Villa</h3>
+          <p>Price: $2,500,000</p>
+          <p>4 Beds | 3 Baths | 3500 sqft</p>
+          <p>Beverly Hills, CA</p>
+        ]]>
+      </description>
+      <styleUrl>#property-icon</styleUrl>
+      <Point>
+        <coordinates>-118.2437,34.0522,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>Modern Apartment</name>
+      <description>
+        <![CDATA[
+          <h3>Modern Apartment</h3>
+          <p>Price: $1,200,000</p>
+          <p>2 Beds | 2 Baths | 1800 sqft</p>
+          <p>Manhattan, NY</p>
+        ]]>
+      </description>
+      <styleUrl>#property-icon</styleUrl>
+      <Point>
+        <coordinates>-73.9712,40.7831,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>Penthouse Suite</name>
+      <description>
+        <![CDATA[
+          <h3>Penthouse Suite</h3>
+          <p>Price: $3,800,000</p>
+          <p>5 Beds | 4 Baths | 4200 sqft</p>
+          <p>Miami Beach, FL</p>
+        ]]>
+      </description>
+      <styleUrl>#property-icon</styleUrl>
+      <Point>
+        <coordinates>-80.1300,25.7907,0</coordinates>
+      </Point>
+    </Placemark>
+    
+  </Document>
+</kml>

@@ -1,0 +1,106 @@
+.location-section {
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.location-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.location-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.location-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 50px;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.location-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.15);
+}
+
+.location-image {
+  position: relative;
+  height: 200px;
+}
+
+.location-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 20px;
+}
+
+.location-overlay h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.location-info {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-stat-label {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.location-stat-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+@media (max-width: 968px) {
+  .location-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-section {
+    padding: 60px 16px;
+  }
+
+  .location-title {
+    font-size: 1.8rem;
+  }
+}

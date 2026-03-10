@@ -1,0 +1,135 @@
+.emi-calculator {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #fff 0%, #f8fafc 100%);
+}
+
+.emi-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.emi-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.emi-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.emi-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+.emi-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.emi-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emi-input-group label {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.emi-input-group input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #e2e8f0;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.emi-input-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  cursor: pointer;
+}
+
+.emi-value {
+  font-weight: 600;
+  color: #2563eb;
+  font-size: 1.1rem;
+}
+
+.emi-result {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 30px;
+}
+
+.emi-monthly {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.emi-monthly .emi-label {
+  display: block;
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.emi-monthly .emi-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.emi-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.emi-detail {
+  text-align: center;
+}
+
+.emi-detail span:first-child {
+  display: block;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.emi-detail span:last-child {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+@media (max-width: 768px) {
+  .emi-inputs {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .emi-card {
+    padding: 24px;
+  }
+
+  .emi-monthly .emi-amount {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,142 @@
+.developer-intro {
+  padding: 110px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  position: relative;
+}
+
+.developer-intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+}
+
+.developer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.developer-content {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.developer-text {
+  padding-right: 20px;
+}
+
+.developer-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.developer-description {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  line-height: 1.85;
+  margin-bottom: 24px;
+}
+
+.developer-vision {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  line-height: 1.85;
+  margin-bottom: 35px;
+  font-style: italic;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #eff6ff, #e0e7ff);
+  border-radius: 16px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.developer-cta {
+  margin-top: 10px;
+}
+
+.developer-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.highlight-card {
+  background: white;
+  padding: 28px 24px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #f1f5f9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
+  border-color: var(--primary-color);
+}
+
+.highlight-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eff6ff, #e0e7ff);
+  border-radius: 14px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.highlight-content {
+  flex: 1;
+}
+
+.highlight-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.highlight-description {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+  .developer-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  
+  .developer-text {
+    padding-right: 0;
+  }
+  
+  .developer-title {
+    font-size: 2rem;
+  }
+  
+  .developer-highlights {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .highlight-card {
+    padding: 22px 20px;
+  }
+}
