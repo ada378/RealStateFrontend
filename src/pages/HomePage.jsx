@@ -8,6 +8,9 @@ import LeadEnquiryForm from '../components/LeadEnquiryForm.jsx';
 import SiteVisitForm from '../components/SiteVisitForm.jsx';
 import Footer from '../components/Footer.jsx';
 import WhatsAppFloat from '../components/WhatsAppFloat.jsx';
+import EMICalculator from '../components/EMICalculator.jsx';
+import InteriorServices from '../components/InteriorServices.jsx';
+
 
 const HomePage = () => {
   return (
@@ -18,6 +21,10 @@ const HomePage = () => {
       <DeveloperIntro />
       <Projects />
       <InvestmentSection />
+      {/* <EMICalculator/> */}
+      <InteriorServices/>
+    
+    
       <Footer />
       <WhatsAppFloat />
     </div>

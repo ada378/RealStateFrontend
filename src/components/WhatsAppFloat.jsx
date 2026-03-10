@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '919876543210'; // Replace with actual WhatsApp number
+    const phoneNumber = '8739002047'; // Replace with actual WhatsApp number
     const message = 'Hi! I am interested in Sunbreeze Properties. Please provide more information.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
