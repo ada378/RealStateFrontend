@@ -215,7 +215,7 @@ const Investment = () => {
 
       <section className="why-invest">
         <div className="container">
-          <h2 className="section-title">Why Invest With Sunbreeze Properties?</h2>
+          <h2 className="section-title">Why Invest With Spark Infra?</h2>
           
           <div className="why-invest-grid">
             {whyInvest.map((item, index) => (

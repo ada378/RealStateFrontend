@@ -25,7 +25,7 @@ const Locations = () => {
         { icon: <FaUniversity />, text: 'IIM Lucknow, KGMU' },
         { icon: <FaHospital />, text: 'SGPGI, KGMU Hospital' }
       ],
-      projects: ['Sunbreeze Greens', 'Sunbreeze Villas']
+      projects: ['Spark Gardens', 'Spark Villas']
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const Locations = () => {
         { icon: <FaUniversity />, text: 'Amity University, Bennett' },
         { icon: <FaShoppingCart />, text: 'DLF Mall, Great India Place' }
       ],
-      projects: ['Sunbreeze Heights', 'Sunbreeze Commercial Hub']
+      projects: ['Spark Heights', 'Spark Commercial Hub']
     }
   ];
 

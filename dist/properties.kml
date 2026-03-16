@@ -1,62 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Real Estate Properties</name>
-    <description>Featured property locations</description>
+    <name>Unique Spark Infra Properties</name>
+    <description>Chandraprabha Realty &amp; QalaGriha Projects</description>
     
-    <Style id="property-icon">
+    <Style id="completed-icon">
       <IconStyle>
+        <color>ff00ff00</color>
+        <scale>1.2</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+          <href>https://maps.google.com/mapfiles/ms/icons/green-dot.png</href>
         </Icon>
       </IconStyle>
     </Style>
     
+    <Style id="ongoing-icon">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.2</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/ms/icons/yellow-dot.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    
+    <!-- Chandraprabha Realty Projects - Lucknow -->
     <Placemark>
-      <name>Luxury Villa</name>
-      <description>
-        <![CDATA[
-          <h3>Luxury Villa</h3>
-          <p>Price: $2,500,000</p>
-          <p>4 Beds | 3 Baths | 3500 sqft</p>
-          <p>Beverly Hills, CA</p>
-        ]]>
-      </description>
-      <styleUrl>#property-icon</styleUrl>
+      <name>Chandraprabha Enclave</name>
+      <description><![CDATA[<b>Chandraprabha Realty</b><br/>Luxury Residential Apartments<br/>250 Happy Families<br/>Location: Lucknow]]></description>
+      <styleUrl>#completed-icon</styleUrl>
       <Point>
-        <coordinates>-118.2437,34.0522,0</coordinates>
+        <coordinates>80.9289,26.8467,0</coordinates>
       </Point>
     </Placemark>
     
     <Placemark>
-      <name>Modern Apartment</name>
-      <description>
-        <![CDATA[
-          <h3>Modern Apartment</h3>
-          <p>Price: $1,200,000</p>
-          <p>2 Beds | 2 Baths | 1800 sqft</p>
-          <p>Manhattan, NY</p>
-        ]]>
-      </description>
-      <styleUrl>#property-icon</styleUrl>
+      <name>Chandraprabha Heights</name>
+      <description><![CDATA[<b>Chandraprabha Realty</b><br/>Premium 2,3,4 BHK Apartments<br/>320 Families<br/>Location: Lucknow]]></description>
+      <styleUrl>#completed-icon</styleUrl>
       <Point>
-        <coordinates>-73.9712,40.7831,0</coordinates>
+        <coordinates>80.9450,26.8600,0</coordinates>
       </Point>
     </Placemark>
     
     <Placemark>
-      <name>Penthouse Suite</name>
-      <description>
-        <![CDATA[
-          <h3>Penthouse Suite</h3>
-          <p>Price: $3,800,000</p>
-          <p>5 Beds | 4 Baths | 4200 sqft</p>
-          <p>Miami Beach, FL</p>
-        ]]>
-      </description>
-      <styleUrl>#property-icon</styleUrl>
+      <name>Chandraprabha Grand</name>
+      <description><![CDATA[<b>Chandraprabha Realty</b><br/>High-Rise Towers<br/>400 Units<br/>Location: Lucknow]]></description>
+      <styleUrl>#ongoing-icon</styleUrl>
       <Point>
-        <coordinates>-80.1300,25.7907,0</coordinates>
+        <coordinates>80.9350,26.8550,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <!-- QalaGriha Projects - Lucknow -->
+    <Placemark>
+      <name>QalaGriha Estates</name>
+      <description><![CDATA[<b>QalaGriha</b><br/>Luxury Independent Villas<br/>Private Gardens<br/>Location: Lucknow]]></description>
+      <styleUrl>#completed-icon</styleUrl>
+      <Point>
+        <coordinates>80.9150,26.8700,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>QalaGriha Gardens</name>
+      <description><![CDATA[<b>QalaGriha</b><br/>Premium Villa Project<br/>Gated Community<br/>Location: Lucknow]]></description>
+      <styleUrl>#ongoing-icon</styleUrl>
+      <Point>
+        <coordinates>80.9200,26.8650,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <!-- Chandraprabha Realty Projects - Noida -->
+    <Placemark>
+      <name>Spark Heights</name>
+      <description><![CDATA[<b>Chandraprabha Realty</b><br/>Luxury High-Rise<br/>280 Families<br/>Location: Noida]]></description>
+      <styleUrl>#completed-icon</styleUrl>
+      <Point>
+        <coordinates>77.3910,28.5355,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>Chandraprabha Tower</name>
+      <description><![CDATA[<b>Chandraprabha Realty</b><br/>Commercial &amp; Residential<br/>400 Units<br/>Location: Noida]]></description>
+      <styleUrl>#ongoing-icon</styleUrl>
+      <Point>
+        <coordinates>77.4050,28.5400,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <!-- QalaGriha Projects - Noida -->
+    <Placemark>
+      <name>QalaGriha Royal</name>
+      <description><![CDATA[<b>QalaGriha</b><br/>Ultra Luxury Villas<br/>Pre-Launch<br/>Location: Noida]]></description>
+      <styleUrl>#ongoing-icon</styleUrl>
+      <Point>
+        <coordinates>77.4200,28.5500,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>Metro View Apartments</name>
+      <description><![CDATA[<b>Chandraprabha Realty</b><br/>Near Metro Station<br/>180 Families<br/>Location: Noida]]></description>
+      <styleUrl>#completed-icon</styleUrl>
+      <Point>
+        <coordinates>77.3800,28.5200,0</coordinates>
       </Point>
     </Placemark>
     

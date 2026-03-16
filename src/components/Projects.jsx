@@ -7,7 +7,7 @@ const Projects = () => {
   const [projects] = useState([
     {
       id: 1,
-      title: 'Sunbreeze Greens',
+      title: 'Spark Gardens',
       location: 'Lucknow',
       price: '₹45,00,000',
       priceText: 'onwards',
@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Sunbreeze Heights',
+      title: 'Spark Heights',
       location: 'Noida',
       price: '₹68,00,000',
       priceText: 'onwards',
@@ -27,7 +27,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Sunbreeze Commercial Hub',
+      title: 'Spark Commercial Hub',
       location: 'Noida',
       price: '₹95,00,000',
       priceText: 'onwards',

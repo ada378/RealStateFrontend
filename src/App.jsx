@@ -12,6 +12,8 @@ const Investment = lazy(() => import('./pages/Investment.jsx'));
 const Services = lazy(() => import('./pages/Services.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Dashboard = lazy(() => import('./pages/Dashboard.jsx'));
+const Divisions = lazy(() => import('./pages/Divisions.jsx'));
+const QalaGriha = lazy(() => import('./pages/QalaGriha.jsx'));
 
 const LoadingFallback = () => (
   <div style={{ 
@@ -38,6 +40,8 @@ function App() {
             <Route path="/locations" element={<Locations />} />
             <Route path="/investment" element={<Investment />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/divisions" element={<Divisions />} />
+            <Route path="/qalagriha" element={<QalaGriha />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<Dashboard />} />
           </Routes>

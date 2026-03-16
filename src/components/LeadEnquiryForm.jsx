@@ -8,14 +8,14 @@ const LeadEnquiryForm = () => {
     name: '',
     email: '',
     phone: '',
-    interestedProject: 'Sunbreeze Greens'
+    interestedProject: 'Spark Gardens'
   });
   const [status, setStatus] = useState('');
 
   const projects = [
-    'Sunbreeze Greens - Lucknow',
-    'Sunbreeze Heights - Noida',
-    'Sunbreeze Commercial Hub - Noida',
+    'Spark Gardens - Lucknow',
+    'Spark Heights - Noida',
+    'Spark Commercial Hub - Noida',
     'Other Projects'
   ];
 
@@ -32,7 +32,7 @@ const LeadEnquiryForm = () => {
         source: 'website'
       });
       setStatus('success');
-      setFormData({ name: '', email: '', phone: '', interestedProject: 'Sunbreeze Greens' });
+      setFormData({ name: '', email: '', phone: '', interestedProject: 'Spark Gardens' });
       setTimeout(() => setStatus(''), 3000);
     } catch (error) {
       setStatus('error');

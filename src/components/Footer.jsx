@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBuilding, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaBuilding, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaLandmark, FaHome } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -10,16 +10,26 @@ const Footer = () => {
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
               <FaBuilding />
-              <span>Sunbreeze Properties</span>
+              <span>Unique Spark Infra Pvt. Ltd.</span>
             </Link>
             <p className="footer-description">
-              Creating premium living and commercial spaces in Lucknow and Noida with over 15 years of excellence.
+              Premier real estate developer in Lucknow and Noida. Operating through <strong>Chandraprabha Realty</strong> and <strong>QalaGriha</strong> divisions with over 15 years of excellence in creating premium living spaces.
             </p>
+            <div className="footer-division-badges">
+              <div className="footer-division">
+                <FaLandmark />
+                <span>Chandraprabha Realty</span>
+              </div>
+              <div className="footer-division">
+                <FaHome />
+                <span>QalaGriha</span>
+              </div>
+            </div>
             <div className="footer-social">
-              <a href="#" className="social-link"><FaFacebook /></a>
-              <a href="#" className="social-link"><FaInstagram /></a>
-              <a href="#" className="social-link"><FaTwitter /></a>
-              <a href="#" className="social-link"><FaLinkedin /></a>
+              <a href="https://facebook.com/uniquesparkinfra" className="social-link" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+              <a href="https://instagram.com/uniquesparkinfra" className="social-link" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+              <a href="https://twitter.com/uniquesparkinfra" className="social-link" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a href="https://linkedin.com/company/uniquesparkinfra" className="social-link" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
             </div>
           </div>
 
@@ -27,18 +37,18 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About Us</Link></li>
               <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/investment">Investment</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
           <div className="footer-links">
-            <h4>Projects</h4>
+            <h4>Our Divisions</h4>
             <ul>
-              <li><Link to="/projects">Sunbreeze Greens - Lucknow</Link></li>
-              <li><Link to="/projects">Sunbreeze Heights - Noida</Link></li>
-              <li><Link to="/projects">Commercial Hub - Noida</Link></li>
+              <li><Link to="/divisions#chandraprabha">Chandraprabha Realty</Link></li>
+              <li><Link to="/divisions#qalagriha">QalaGriha</Link></li>
+              <li><Link to="/projects">All Projects</Link></li>
               <li><Link to="/investment">Investment Plans</Link></li>
             </ul>
           </div>
@@ -56,14 +66,14 @@ const Footer = () => {
               </li>
               <li>
                 <FaEnvelope />
-                <span>info@sunbreeze.in</span>
+                <span>info@uniquesparkinfra.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 Sunbreeze Properties. All rights reserved.</p>
+          <p>&copy; 2026 Unique Spark Infra Pvt. Ltd. All rights reserved.</p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>

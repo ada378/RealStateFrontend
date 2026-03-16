@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaSearch, FaCalendarAlt } from 'react-icons/fa';
+import { FaSearch, FaCalendarAlt, FaBuilding, FaHome, FaLandmark } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -20,16 +20,27 @@ const Hero = () => {
 
       <div className="hero-content">
         <div className="hero-content-inner">
-          <span className="hero-tag">Premium Real Estate</span>
+         
           
           <h1 className="hero-title">
-            Premium Living Spaces
-            <span className="gradient-text">in Lucknow and Noida</span>
+            Building Dreams,
+            <span className="gradient-text">Creating Legacies</span>
           </h1>
           
           <p className="hero-subtitle">
-            Discover luxury residential and commercial properties crafted for modern living in Lucknow and Noida
+            Premier real estate developer in Lucknow & Noida. Operating through <strong>Chandraprabha Realty</strong> and <strong>QalaGriha</strong> - delivering premium residential and commercial spaces since 2011.
           </p>
+        </div>
+
+        <div className="hero-division-badges">
+          <div className="division-badge">
+            <FaBuilding />
+            <span>Chandraprabha Realty</span>
+          </div>
+          <div className="division-badge">
+            <FaHome />
+            <span>QalaGriha</span>
+          </div>
         </div>
 
         <div className="hero-buttons">
@@ -59,11 +70,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero-scroll">
-        <div className="hero-scroll-indicator">
-          <div className="hero-scroll-dot"></div>
-        </div>
-      </div>
+      
     </section>
   );
 };

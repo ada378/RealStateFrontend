@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaAward, FaUsers, FaBuilding, FaHandshake, FaArrowRight } from 'react-icons/fa';
+import { FaAward, FaUsers, FaBuilding, FaHandshake, FaArrowRight, FaLandmark, FaHome } from 'react-icons/fa';
 
 const DeveloperIntro = () => {
   const highlights = [
@@ -21,12 +21,34 @@ const DeveloperIntro = () => {
             viewport={{ once: true }}
             className="developer-text"
           >
-            <h2 className="developer-title">About Sunbreeze Properties</h2>
+            <h2 className="developer-title">About Unique Spark Infra</h2>
             <p className="developer-description">
-              With over 15 years of excellence in real estate development, Sunbreeze Properties has been 
-              creating premium living and commercial spaces in Lucknow and Noida. Our commitment to quality, 
-              innovation, and customer satisfaction has made us a trusted name in the industry.
+              Unique Spark Infra Pvt. Ltd. is a premier real estate developer operating across Lucknow and Noida. 
+              With over 15 years of excellence, we operate through two specialized divisions: <strong>Chandraprabha Realty</strong> 
+              for premium residential and commercial projects, and <strong>QalaGriha</strong> for luxury villas and bespoke living spaces.
             </p>
+            
+            <div className="developer-divisions">
+              <div className="division-card">
+                <div className="division-icon">
+                  <FaLandmark />
+                </div>
+                <div className="division-info">
+                  <h4>Chandraprabha Realty</h4>
+                  <p>Premium residential & commercial developments</p>
+                </div>
+              </div>
+              <div className="division-card">
+                <div className="division-icon">
+                  <FaHome />
+                </div>
+                <div className="division-info">
+                  <h4>QalaGriha</h4>
+                  <p>Luxury villas and bespoke living spaces</p>
+                </div>
+              </div>
+            </div>
+
             <div className="developer-vision">
               <p>We envision creating sustainable communities that blend modern amenities with natural beauty, 
               providing our customers with not just homes, but a lifestyle that enhances their quality of life.</p>

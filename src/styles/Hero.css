@@ -4,7 +4,8 @@
   min-height: 700px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 8%;
   overflow: hidden;
   background: #0f172a;
 }
@@ -31,10 +32,10 @@
 .hero-content {
   position: relative;
   z-index: 10;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 0;
   padding: 0 30px;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
@@ -65,19 +66,49 @@
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 35px;
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.hero-division-badges {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.division-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.division-badge:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.division-badge svg {
+  font-size: 16px;
+  color: #0ea5e9;
 }
 
 .hero-buttons {
   display: flex;
   gap: 16px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 45px;
 }
 
@@ -96,14 +127,14 @@
 }
 
 .hero-btn.primary {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
   color: white;
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
 }
 
 .hero-btn.primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 20px 45px rgba(30, 58, 138, 0.5);
 }
 
 .hero-btn.secondary {
@@ -122,12 +153,12 @@
 
 .hero-stats {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: flex-start;
+  gap: 60px;
 }
 
 .hero-stat {
-  text-align: center;
+  text-align: left;
 }
 
 .hero-stat-number {

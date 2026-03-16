@@ -54,6 +54,31 @@
 .footer-social {
   display: flex;
   gap: 12px;
+  margin-top: 24px;
+}
+
+.footer-division-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-division {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0ea5e9;
+}
+
+.footer-division svg {
+  font-size: 0.9rem;
 }
 
 .social-link {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaBuilding } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +8,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
+    { name: 'Chandraprabha Realty', path: '/divisions#chandraprabha' },
+    { name: 'QalaGriha', path: '/qalagriha' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Locations', path: '/locations' },
     { name: 'Investment', path: '/investment' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -19,11 +19,15 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">
-            <span className="logo-sun">SUN</span>
-            <span className="logo-breeze">BREEZE</span>
-          </span>
-          <span className="logo-subtitle">PROPERTIES</span>
+          
+          <div className="logo-content">
+            <span className="logo-main">
+              <span className="logo-unique">UNIQUE</span>
+              <span className="logo-spark">SPARK</span>
+              <span className="logo-infra">INFRA</span>
+            </span>
+            <span className="logo-subtitle">PVT. LTD</span>
+          </div>
         </Link>
 
         <ul className="navbar-menu">

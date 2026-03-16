@@ -7,15 +7,15 @@ const SiteVisitForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    preferredProject: 'Sunbreeze Greens - Lucknow',
+    preferredProject: 'Spark Gardens - Lucknow',
     preferredDate: ''
   });
   const [status, setStatus] = useState('');
 
   const projects = [
-    'Sunbreeze Greens - Lucknow',
-    'Sunbreeze Heights - Noida',
-    'Sunbreeze Commercial Hub - Noida'
+    'Spark Gardens - Lucknow',
+    'Spark Heights - Noida',
+    'Spark Commercial Hub - Noida'
   ];
 
   const handleChange = (e) => {
@@ -31,7 +31,7 @@ const SiteVisitForm = () => {
         source: 'website'
       });
       setStatus('success');
-      setFormData({ name: '', phone: '', preferredProject: 'Sunbreeze Greens - Lucknow', preferredDate: '' });
+      setFormData({ name: '', phone: '', preferredProject: 'Spark Gardens - Lucknow', preferredDate: '' });
       setTimeout(() => setStatus(''), 3000);
     } catch (error) {
       setStatus('error');
