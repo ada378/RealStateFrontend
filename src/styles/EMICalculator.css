@@ -120,16 +120,49 @@
 }
 
 @media (max-width: 768px) {
+  .emi-calculator {
+    padding: 50px 16px;
+  }
+
+  .emi-title {
+    font-size: 1.7rem;
+  }
+
+  .emi-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
   .emi-inputs {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
   }
 
   .emi-card {
-    padding: 24px;
+    padding: 20px;
+  }
+
+  .emi-input-group label {
+    font-size: 0.9rem;
+  }
+
+  .emi-value {
+    font-size: 1rem;
+  }
+
+  .emi-monthly .emi-label {
+    font-size: 0.9rem;
   }
 
   .emi-monthly .emi-amount {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .emi-details {
+    gap: 16px;
+  }
+
+  .emi-detail span:first-child {
+    font-size: 0.8rem;
   }
 }

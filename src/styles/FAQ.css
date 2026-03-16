@@ -65,13 +65,18 @@
   line-height: 1.7;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .faq {
     padding: 60px 16px;
   }
 
   .faq-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+  }
+
+  .faq-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
   }
 
   .faq-question {

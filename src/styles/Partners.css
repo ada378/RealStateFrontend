@@ -47,11 +47,34 @@
 }
 
 @media (max-width: 768px) {
+  .partners {
+    padding: 50px 16px;
+  }
+  
+  .partners-title {
+    font-size: 1.6rem;
+  }
+  
+  .partners-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
   .partners-grid {
-    gap: 30px;
+    gap: 24px;
   }
 
   .partner-logo img {
     height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-grid {
+    gap: 20px;
+  }
+  
+  .partner-logo img {
+    height: 28px;
   }
 }

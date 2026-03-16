@@ -209,17 +209,63 @@
   
   .navbar-container {
     height: 65px;
+    padding: 0 20px;
   }
   
   .navbar-mobile {
     top: 65px;
   }
   
-  .logo-text {
-    font-size: 22px;
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  
+  .logo-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .logo-main {
+    font-size: 16px;
   }
   
   .logo-subtitle {
-    font-size: 8px;
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  
+  .logo-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .logo-main {
+    font-size: 14px;
+  }
+  
+  .logo-subtitle {
+    display: none;
+  }
+  
+  .navbar-container {
+    height: 60px;
+  }
+  
+  .navbar-mobile {
+    top: 60px;
+  }
+  
+  .navbar-toggle {
+    font-size: 20px;
   }
 }

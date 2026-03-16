@@ -269,28 +269,106 @@
 }
 
 @media (max-width: 768px) {
+  .legacy-map {
+    padding: 60px 0;
+  }
+  
+  .legacy-map-title {
+    font-size: 1.7rem;
+  }
+  
+  .legacy-map-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .legacy-map-header {
+    margin-bottom: 30px;
+  }
+  
   .legacy-map-stats {
-    gap: 20px;
+    gap: 15px;
+    margin-bottom: 30px;
   }
   
   .legacy-stat {
-    padding: 16px 20px;
+    padding: 14px 16px;
+    flex: 1 1 40%;
   }
   
   .legacy-stat-number {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  
+  .legacy-stat-label {
+    font-size: 0.8rem;
   }
   
   .legacy-projects-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .legacy-map-title {
-    font-size: 2rem;
+    gap: 20px;
   }
   
   .legacy-map-wrapper {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .leaflet-map-container {
+    height: 350px;
+  }
+  
+  .map-legend {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .legend-item {
+    font-size: 0.8rem;
+  }
+  
+  .legacy-city-section {
     padding: 20px;
+  }
+  
+  .city-section-title {
+    font-size: 1.1rem;
+  }
+  
+  .legacy-project-card {
+    padding: 16px;
+    gap: 12px;
+  }
+  
+  .legacy-project-card .legacy-project-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .legacy-map-tag {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+  }
+  
+  .legacy-map-title {
+    font-size: 1.5rem;
+  }
+  
+  .legacy-stat {
+    flex: 1 1 100%;
+  }
+  
+  .map-controls-new {
+    top: 60px;
+    right: 10px;
+  }
+  
+  .map-controls-new .map-control-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
   }
 }
 

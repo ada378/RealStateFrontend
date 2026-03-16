@@ -148,20 +148,56 @@
 }
 
 @media (max-width: 768px) {
+  .investment-section {
+    padding: 60px 0;
+  }
+  
   .investment-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
+  }
+  
+  .investment-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .investment-header {
+    margin-bottom: 40px;
   }
   
   .investment-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .investment-card {
+    padding: 28px 20px;
+  }
+  
+  .investment-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 18px;
+  }
+  
+  .investment-card-title {
+    font-size: 1.1rem;
+  }
+  
+  .investment-card-description {
+    font-size: 0.9rem;
   }
   
   .investment-cta {
-    padding: 45px 28px;
+    padding: 35px 24px;
   }
   
   .investment-cta h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+  
+  .investment-cta p {
+    font-size: 0.95rem;
   }
 }

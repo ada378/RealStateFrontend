@@ -190,3 +190,55 @@
     padding: 22px 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .developer-intro {
+    padding: 60px 0;
+  }
+  
+  .developer-title {
+    font-size: 1.7rem;
+  }
+  
+  .developer-description {
+    font-size: 0.95rem;
+  }
+  
+  .developer-divisions {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .division-card {
+    padding: 14px;
+  }
+  
+  .division-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .developer-vision {
+    font-size: 0.95rem;
+    padding: 16px 18px;
+  }
+  
+  .highlight-card {
+    padding: 18px 16px;
+  }
+  
+  .highlight-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+  
+  .highlight-title {
+    font-size: 1rem;
+  }
+  
+  .highlight-description {
+    font-size: 0.85rem;
+  }
+}

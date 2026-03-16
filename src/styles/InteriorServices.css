@@ -111,12 +111,41 @@
 }
 
 @media (max-width: 768px) {
+  .interior-services {
+    padding: 60px 0;
+  }
+  
+  .services-header {
+    margin-bottom: 50px;
+  }
+  
   .services-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .services-subtitle {
+    font-size: 1rem;
   }
   
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 24px;
+  }
+  
+  .service-card {
+    padding: 30px 20px;
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-title {
+    font-size: 1.4rem;
+  }
+  
+  .service-description {
+    font-size: 0.95rem;
   }
 }

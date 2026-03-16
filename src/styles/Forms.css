@@ -275,23 +275,63 @@
 
 @media (max-width: 768px) {
   .lead-enquiry {
-    padding: 70px 0;
+    padding: 50px 0;
+  }
+  
+  .enquiry-header {
+    margin-bottom: 30px;
   }
   
   .enquiry-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  
+  .enquiry-subtitle {
+    font-size: 0.9rem;
   }
   
   .enquiry-form {
-    padding: 30px 24px;
+    padding: 24px 20px;
+  }
+  
+  .enquiry-form .form-input {
+    padding: 14px 14px 14px 42px;
+    font-size: 14px;
+  }
+  
+  .enquiry-submit-btn {
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+  
+  .site-visit {
+    padding: 50px 0;
+  }
+  
+  .site-visit-header {
+    margin-bottom: 30px;
   }
   
   .site-visit-title {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
+  }
+  
+  .site-visit-subtitle {
+    font-size: 0.95rem;
   }
   
   .site-visit-form {
-    padding: 30px 24px;
+    padding: 24px 20px;
+  }
+  
+  .site-visit-form .form-input {
+    padding: 14px 14px 14px 42px;
+    font-size: 14px;
+  }
+  
+  .site-visit-submit-btn {
+    padding: 16px 24px;
+    font-size: 1rem;
   }
   
   .form-row {

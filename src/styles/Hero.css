@@ -228,11 +228,17 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 620px;
-    padding-top: 65px;
+    padding-top: 80px;
+    padding-left: 0;
+    justify-content: center;
+    text-align: center;
   }
   
   .hero-content {
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
   }
   
   .hero-title {
@@ -242,6 +248,11 @@
   .hero-subtitle {
     font-size: 1rem;
     margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .hero-division-badges {
+    justify-content: center;
   }
   
   .hero-buttons {
@@ -258,9 +269,51 @@
   .hero-stats {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+  }
+  
+  .hero-stat {
+    text-align: center;
   }
   
   .hero-stat-number {
     font-size: 2rem;
+  }
+  
+  .hero-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 75px;
+    min-height: 550px;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .hero-tag {
+    padding: 8px 16px;
+    font-size: 0.65rem;
+  }
+  
+  .hero-btn {
+    padding: 12px 24px;
+    font-size: 13px;
+  }
+  
+  .hero-stat-number {
+    font-size: 1.6rem;
+  }
+  
+  .hero-stat-label {
+    font-size: 0.75rem;
   }
 }
